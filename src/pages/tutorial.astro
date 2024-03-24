@@ -1,0 +1,49 @@
+---
+import PostCard from "../components/PostCard.astro";
+import { formatBlogPosts } from "../js/utils";
+import MainLayout from "../layouts/MainLayout.astro";
+
+const allPosts = await Astro.glob("../pages/blog/*.md");
+const formattedPosts = formatBlogPosts(allPosts);
+const allCategories = formattedPosts
+  .map((cat) => cat.frontmatter.category.toLowerCase())
+  .flat();
+
+const processedCats = allCategories.reduce((acc, category) => {
+  // check if the category exists in the acc
+  const value = acc[category] || 0;
+
+  return {
+    ...acc,
+    [category]: value + 1,
+  };
+}, {});
+---
+
+<MainLayout title="My Blog">
+  <div class="spacer"></div>
+
+  <section class="page-banner">
+    <div class="page-banner-content">
+      <div>
+        <h1>Latest Articles</h1>
+        <p>I do deep-dives on Software Dev and business stuff .</p>
+      </div>
+    </div>
+  </section>
+  <section class="cards">
+    <div class="cards-list col-3">
+      {
+        formattedPosts.map((post) => (
+          <>
+            <PostCard
+              frontmatter={post.frontmatter}
+              url={post.url}
+              tagType="h3"
+            />
+          </>
+        ))
+      }
+    </div>
+  </section>
+</MainLayout>

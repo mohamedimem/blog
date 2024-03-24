@@ -19,7 +19,7 @@ const relatedPosts = formattedPosts
   .filter(
     (post) =>
       post.frontmatter.category.toLowerCase() === category.toLowerCase() &&
-      post.frontmatter.title !== title
+      post.frontmatter.title !== title,
   )
   .slice(0, 3);
 ---
@@ -31,24 +31,13 @@ const relatedPosts = formattedPosts
   {frontmatter}
   robots={frontmatter.robots}
 >
-  <PostHeader {title} {description} {date} {category} {image} {author} />
-  <div class="post-content">
-    <div class="content">
-      <slot />
-    </div>
-    <div class="sidebar">
-      <aside class="container" aria-label="Blog categories">
-        <h2 class="h3">Blog Categories</h2>
-        <CategoryCloud />
-      </aside>
-      {
-        relatedPosts.length > 0 && (
-          <aside class="container" aria-label="Related posts">
-            <h2 class="h3">Related Posts</h2>
-            <RelatedPosts {relatedPosts} />
-          </aside>
-        )
-      }
-    </div>
-  </div>
+  <article>
+    <section class="article-container">
+      <div class="post-content">
+        <div class="content">
+          <slot />
+        </div>
+      </div>
+    </section>
+  </article>
 </MainLayout>

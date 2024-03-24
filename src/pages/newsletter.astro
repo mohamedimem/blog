@@ -1,0 +1,26 @@
+---
+import NewsLetter from "../../NewsLetter.astro";
+import PostCard from "../components/PostCard.astro";
+import { formatBlogPosts } from "../js/utils";
+import MainLayout from "../layouts/MainLayout.astro";
+
+const allPosts = await Astro.glob("../pages/blog/*.md");
+const formattedPosts = formatBlogPosts(allPosts);
+const allCategories = formattedPosts
+  .map((cat) => cat.frontmatter.category.toLowerCase())
+  .flat();
+
+const processedCats = allCategories.reduce((acc, category) => {
+  // check if the category exists in the acc
+  const value = acc[category] || 0;
+
+  return {
+    ...acc,
+    [category]: value + 1,
+  };
+}, {});
+---
+
+<MainLayout title="My Blog">
+  <section class="page-banner"></section>
+</MainLayout>

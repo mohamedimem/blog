@@ -25,15 +25,14 @@ const { title, date, author, image, description, category } = frontmatter;
     <div class="card-content">
       <h3>{title}</h3>
       <div class="card-content-info">
-        <time>{formatDate(date)}</time>
-        <hr /><span>${slugify(category)}</span>
+        <time></time>
+        <div class="tags">
+          <span>
+            <div class="tag tag-4">${slugify(category)}</div>
+          </span>
+        </div>
       </div>
-      <div class="tags">
-        <div class="tag tag-2">#dart</div>
-        <div class="tag tag-1">#flutter</div>
-        <div class="tag tag-5">#networking</div>
-        <div class="tag tag-5">#json</div>
-      </div>
+      <div class="tags"></div>
       <p>
         {description}
       </p>

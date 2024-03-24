@@ -21,15 +21,50 @@ const processedCats = allCategories.reduce((acc, category) => {
 ---
 
 <MainLayout title="My Blog">
-  <h1>salem</h1>
-  <section class="page-banner">
-    <div class="page-banner-content">
-      <div>
-        <h1>Latest Articles</h1>
-        <p>I do deep-dives on Software Dev and business stuff .</p>
+  <section class="intro">
+    <h1 class="intro-title">
+      Learn <span class="frame frame-dart">Dart,</span>
+      <span class="frame frame-flutter">Flutter</span> &amp; <span
+        class="frame frame-firebase">Firebase</span
+      >
+    </h1>
+    <p class="intro-subtitle">
+      Want to become a Flutter Pro and create production-ready apps?<br /><a
+        href="search/index.html">Search the site</a
+      > or browse my <a href="tutorials/index.html">tutorials</a> to fast-track your
+      learning, <b>all for free!</b>
+      <div class="newsletter-container">
+        <h3>The best Flutter tutorials. Right in your inbox.</h3>
+        <p>
+          Join 20K+ Flutter developers who get in-depth articles (on Fridays)
+          and hand-picked Flutter resources (every month):
+        </p>
+        <form
+          id="form-newNewsletterHomePage"
+          action="https://app.convertkit.com/forms/3584409/subscriptions"
+          method="post"
+          novalidate="true"
+          data-sv-form="3584409"
+          data-uid="64c4f3ed27"
+        >
+          <input
+            name="email_address"
+            type="email"
+            required="true"
+            placeholder="Your Email Address"
+            aria-label="Your Email Address"
+          /><button type="submit">Subscribe</button>
+        </form>
+        <script></script>
+        <figure>
+          <blockquote>
+            <p>No spam. Ever. Unsubscribe at any time.</p>
+          </blockquote>
+        </figure>
       </div>
-    </div>
+    </p>
   </section>
+
   <section class="cards">
     <div class="cards-list col-3">
       {

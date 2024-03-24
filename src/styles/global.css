@@ -21,7 +21,6 @@
     --neutral4: #707178;
     --neutral3: #8F9099;
     --neutral2: #ACADB5;
-    --purple: #a020f0;
     --neutral1: #E4E5ED;
     --codeTextColor: var(--neutral3);
     --main-font: 'Lato', sans-serif;
@@ -282,6 +281,9 @@ ul {
     background: var(--header-color);
     font-weight: 700;
     line-height: 1;
+    background-color: white;
+    color: var(--primary7);
+    ;
     font-size: 17px;
     position: sticky;
     top: 0;
@@ -302,6 +304,30 @@ ul {
 #header a {
     text-decoration: none;
     color: var(--nav-links-color)
+}
+
+#header br {
+    background-color: white;
+    color: white;
+}
+
+#header .spacer {
+    display: inline-block;
+    width: 100%;
+    height: 60px;
+    /* Adjust height as needed */
+    background-color: white;
+    margin: 0;
+    /* Reset margin */
+    padding: 0;
+    /* Reset padding */
+}
+
+.spacer {
+    width: 100%;
+    height: 60px;
+    /* Adjust height as needed */
+    background-color: white;
 }
 
 #header .standalone-cta {
@@ -377,12 +403,12 @@ ul {
     white-space: nowrap
 }
 
-#main-nav a[href^="https://pro.codewithandrea.com"] {
+#main-nav a[href^="https://pro.iKF2fL4AHh3r.com"] {
     display: none
 }
 
 @media all and (min-width:480px) {
-    #main-nav a[href^="https://pro.codewithandrea.com"] {
+    #main-nav a[href^="https://pro.iKF2fL4AHh3r.com"] {
         display: inline
     }
 }
@@ -595,7 +621,7 @@ ul {
 
 .intro {
     padding: 120px 0 130px;
-    background: url(/img/icons/icon-firebase.svg) no-repeat 9.2% 235px, url(/img/icons/icon-dart.svg) no-repeat 88.2% 365px, url(/img/icons/icon-flutter.svg) no-repeat 79.16% bottom;
+    background: url(images/icons/icon-firebase.svg) no-repeat 9.2% 235px, url(images/icons/icon-dart.svg) no-repeat 88.2% 365px, url(images/icons/icon-flutter.svg) no-repeat 79.16% bottom;
     text-align: center;
     color: var(--intro-content-color);
     font-size: var(--fs-body);
@@ -640,14 +666,14 @@ ul {
 }
 
 .intro-title .frame-dart::after {
-    background-image: url(/img/strokes/frame-blue.png);
+    background-image: url(images/strokes/frame-blue.png);
     left: -29px;
     width: 489px;
     bottom: -1px
 }
 
 .intro-title .frame-firebase::after {
-    background-image: url(/img/strokes/frame-yellow.png);
+    background-image: url(images/strokes/frame-yellow.png);
     width: 352px;
     left: -28px;
     height: 31px;
@@ -655,11 +681,11 @@ ul {
 }
 
 .dark .intro-title .frame-dart::after {
-    background-image: url(/img/strokes/frame-blue-dark.png)
+    background-image: url(images/strokes/frame-blue-dark.png)
 }
 
 .dark .intro-title .frame-firebase::after {
-    background-image: url(/img/strokes/frame-yellow-dark.png)
+    background-image: url(images/strokes/frame-yellow-dark.png)
 }
 
 .intro-subtitle {
@@ -762,13 +788,13 @@ hr.vertical.higher {
         background-size: 100% auto
     }
     .intro-title .frame-dart::after {
-        background-image: url(/img/strokes/frame-blue.png);
+        background-image: url(images/strokes/frame-blue.png);
         left: 0;
         width: 405px;
         bottom: 2px
     }
     .intro-title .frame-firebase::after {
-        background-image: url(/img/strokes/frame-yellow.png);
+        background-image: url(images/strokes/frame-yellow.png);
         width: 334px;
         left: -28px
     }
@@ -791,7 +817,7 @@ hr.vertical.higher {
     }
     .intro-title .frame-dart::after,
     .intro-title .frame-flutter::after {
-        background-image: url(/img/strokes/frame-blue-m.png)
+        background-image: url(images/strokes/frame-blue-m.png)
     }
     .intro-title .frame-flutter::after {
         width: 175px;
@@ -800,10 +826,10 @@ hr.vertical.higher {
     }
     .dark .intro-title .frame-dart::after,
     .dark .intro-title .frame-flutter::after {
-        background-image: url(/img/strokes/frame-blue-dark-m.png)
+        background-image: url(images/strokes/frame-blue-dark-m.png)
     }
     .dark .intro-title .frame-firebase::after {
-        background-image: url(/img/strokes/frame-yellow-dark-m.png)
+        background-image: url(images/strokes/frame-yellow-dark-m.png)
     }
     .intro-title .frame-dart::after {
         left: -15px;
@@ -898,7 +924,7 @@ form>button[type=submit]:disabled {
 }
 
 form.invalid>input[type=email] {
-    background-image: url("img/icons/icon-error.svg");
+    background-image: url("images/icons/icon-error.svg");
     background-repeat: no-repeat;
     background-position: center right 18px;
     box-shadow: 0 0 0 1px #e53c58;
@@ -1626,7 +1652,7 @@ form p.error-msg {
 }
 
 .testimonial .rating {
-    background-image: url(/img/icons/icon-star.svg);
+    background-image: url(images/icons/icon-star.svg);
     width: 80px;
     height: 16px;
     margin-top: 8px
@@ -1897,7 +1923,7 @@ form p.error-msg {
 }
 
 .signup-footer {
-    background: var(--purple);
+    background: var(--primary5);
     padding: 80px;
     text-align: center
 }
@@ -3333,7 +3359,7 @@ article .video-player iframe {
     margin-left: -36px;
     margin-top: -36px;
     position: absolute;
-    background: url("/img/logos/video-play.png") no-repeat;
+    background: url("images/logos/video-play.png") no-repeat;
     cursor: pointer
 }
 
@@ -3679,7 +3705,7 @@ article .video-player iframe {
 }
 
 .course-modules-accordion .accordion-title:after {
-    background: url("/img/icons/icon-arrow-dark.svg") no-repeat center center;
+    background: url("images/icons/icon-arrow-dark.svg") no-repeat center center;
     content: '';
     position: absolute;
     right: 30px;
@@ -3751,7 +3777,7 @@ article .video-player iframe {
 }
 
 .dark .course-modules-accordion .accordion-title:after {
-    background-image: url("/img/icons/icon-arrow-light.svg")
+    background-image: url("images/icons/icon-arrow-light.svg")
 }
 
 .dark .course-modules-accordion .accordion-item:not(:last-child) {
@@ -3857,7 +3883,7 @@ article .video-player iframe {
 }
 
 .faq .accordion-title:after {
-    background: url("img/icons/icon-faq-arrow.svg") no-repeat center center;
+    background: url("images/icons/icon-faq-arrow.svg") no-repeat center center;
     content: "";
     width: 20px;
     height: 20px;
@@ -4242,7 +4268,7 @@ article .video-player iframe {
 }
 
 .product-card ul>li::after {
-    background: url("/img/icons/icon-list-mark.svg") no-repeat center center;
+    background: url("images/icons/icon-list-mark.svg") no-repeat center center;
     width: 16px;
     height: 16px;
     content: "";
