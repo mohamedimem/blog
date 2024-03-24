@@ -34,6 +34,7 @@ const { posts, authorName } = Astro.props;
   <section class="container" aria-label={`Posts by ${authorName}`}>
     <h1 class="h1">Posts by <span>{authorName}</span></h1>
     <div class="cards-list col-3">
+
       {
         posts.map((post) => (
           <PostCard

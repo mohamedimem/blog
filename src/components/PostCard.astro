@@ -15,34 +15,28 @@ const Tag = tagType;
 const { title, date, author, image, description, category } = frontmatter;
 ---
 
-<article class="card">
-  <small>
-    <a href={`/category/${slugify(category)}/`} class="badge">{category}</a>
-  </small>
-  <a href={url} aria-hidden="true" tabindex="-1">
-    <Image
-      src={image.src}
-      alt={image.alt}
-      width="400"
-      height="250"
-      format="webp"
-      fit="cover"
-      quality={80}
-      aspectRatio="4:1"
-    />
-  </a>
-  <div class="content">
-    <div>
-      <Tag class="h3">
-        <a href={url}>{title}</a>
-      </Tag>
-      <small>
-        by <a href={`/author/${slugify(author)}/`}>{author}</a> • {
-          formatDate(date)
-        }
-      </small>
+<a class="card" href={url}>
+  <article>
+    <figure>
+      <picture>
+        <img src={image.src} alt={image.alt} loading="lazy" />
+      </picture>
+    </figure>
+    <div class="card-content">
+      <h3>{title}</h3>
+      <div class="card-content-info">
+        <time>{formatDate(date)}</time>
+        <hr /><span>${slugify(category)}</span>
+      </div>
+      <div class="tags">
+        <div class="tag tag-2">#dart</div>
+        <div class="tag tag-1">#flutter</div>
+        <div class="tag tag-5">#networking</div>
+        <div class="tag tag-5">#json</div>
+      </div>
+      <p>
+        {description}
+      </p>
     </div>
-    <p>{description}</p>
-    <Link href={url} text="Read Post" style="secondary" />
-  </div>
-</article>
+  </article>
+</a>
