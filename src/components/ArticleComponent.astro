@@ -1,0 +1,42 @@
+---
+// library imports
+import { Image } from "@astrojs/image/components";
+
+// component imports
+import Link from "./Link.astro";
+
+// utils imports
+import { slugify, formatDate } from "../js/utils";
+
+const { frontmatter, url, tagType } = Astro.props;
+
+const Tag = tagType;
+
+const { title, date, author, image, description, category } = frontmatter;
+---
+
+<a class="card" href={url}>
+  <article>
+    <figure>
+      <picture>
+        <img src={image.src} alt={image.alt} loading="lazy" />
+      </picture>
+    </figure>
+    <div class="card-content">
+      <h3>{title}</h3>
+      <div class="card-content-info">
+        <time>{formatDate(date)}</time>
+        <hr /><span>30 min read</span>
+      </div>
+      <div class="tags">
+        <div class="tag tag-2">#dart</div>
+        <div class="tag tag-1">#flutter</div>
+        <div class="tag tag-5">#networking</div>
+        <div class="tag tag-5">#json</div>
+      </div>
+      <p>
+        {description}
+      </p>
+    </div>
+  </article>
+</a>

@@ -1,0 +1,954 @@
+---
+import "../styles/global.css";
+---
+
+<!doctype html>
+<html lang="en">
+  <!-- Mirrored from codewithandrea.com/ by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 24 Mar 2024 07:14:32 GMT -->
+  <!-- Added by HTTrack -->
+  <meta http-equiv="content-type" content="text/html;charset=utf-8" />
+  <!-- /Added by HTTrack -->
+
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+  <meta
+    name="google-site-verification"
+    content="SGGecsNNiCbhnC4w9xczIet6mJTTlOUDRwWISPWrV18"
+  />
+  <meta charset="UTF-8" />
+  <meta name="og:site_name" content="Code With Andrea" />
+  <link rel="canonical" href="index.html" />
+  <meta name="twitter:url" content="index.html" />
+  <meta name="og:url" content="index.html" />
+  <title>
+    Code With Andrea: Dart, Flutter &amp; Firebase tutorials and courses
+  </title>
+  <meta
+    name="twitter:title"
+    property="og:title"
+    content="Code With Andrea: Dart, Flutter & Firebase tutorials and courses"
+  />
+  <meta
+    name="description"
+    property="og:description"
+    content="Learn how to become a Flutter Pro and build production-ready apps on mobile and beyond."
+  />
+  <meta
+    name="twitter:description"
+    content="Learn how to become a Flutter Pro and build production-ready apps on mobile and beyond."
+  />
+  <meta name="twitter:card" content="summary_large_image" />
+  <link rel="stylesheet" href="../styles/global.css" type="text/css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="../fonts.googleapis.com/index.html" />
+  <link
+    rel="preconnect"
+    href="../fonts.gstatic.com/index.html"
+    crossorigin="true"
+  />
+  <link
+    rel="stylesheet"
+    href="../fonts.googleapis.com/css21d43.css?family=Lato:ital,wght@0,400;0,700;0,900;1,400&family=Roboto+Mono&display=swap"
+  />
+  <link
+    rel="shortcut icon"
+    href="img/favicon/favicon.ico"
+    type="image/x-icon"
+  />
+  <link
+    rel="apple-touch-icon"
+    sizes="180x180"
+    href="img/favicon/apple-touch-icon.png"
+  />
+  <link
+    rel="icon"
+    type="image/png"
+    sizes="32x32"
+    href="img/favicon/favicon-32x32.png"
+  />
+  <link
+    rel="icon"
+    type="image/png"
+    sizes="16x16"
+    href="img/favicon/favicon-16x16.png"
+  />
+  <link rel="manifest" href="img/favicon/site.webmanifest" />
+  <link
+    rel="mask-icon"
+    href="img/favicon/safari-pinned-tab.svg"
+    color="#5bbad5"
+  />
+  <meta name="msapplication-TileColor" content="#da532c" />
+  <meta name="theme-color" content="#ffffff" />
+  <link
+    rel="alternate"
+    href="rss.xml"
+    type="application/rss+xml"
+    title="Subscribe to Code With Andrea"
+  />
+  <meta name="twitter:image" content="img/banners/social-banner.png" />
+  <meta
+    name="image"
+    property="og:image"
+    content="img/banners/social-banner.png"
+  />
+  <script
+    async
+    defer
+    data-domain="codewithandrea.com"
+    src="../plausible.io/js/script.tagged-events.outbound-links.revenue.js"
+  ></script>
+
+  <script src="js/theme-toggle.min.js"></script>
+  <script src="js/email-signup.min.js"></script>
+
+  <body>
+    <header id="header">
+      <div class="header-container">
+        <a class="logo" href="index.html"
+          ><img src="img/icons/logo.svg" alt="Code With Andrea" /><span
+            >CODE WITH ANDREA</span
+          ></a
+        >
+        <nav id="main-nav">
+          <ul>
+            <li><a href="tutorials/index.html">Tutorials</a></li>
+            <li><a href="courses/index.html">Courses</a></li>
+            <li><a href="newsletter/index.html">Newsletter</a></li>
+            <li class="switch-theme-list-item">
+              <button class="switch-theme-button nav-button"
+                ><img
+                  class="icon-night-mode"
+                  width="22"
+                  height="22"
+                  src="img/icons/icon-night-mode.svg"
+                  alt="Switch to night mode"
+                /><img
+                  class="icon-day-mode"
+                  width="22"
+                  height="22"
+                  src="img/icons/icon-day-mode.svg"
+                  alt="Day mode"
+                /><span id="switch-theme-text">Switch to dark mode</span
+                ></button
+              >
+            </li>
+          </ul>
+          <a
+            class="search-link nav-button"
+            href="search/index.html"
+            aria-label="Search"
+          >
+            <svg
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M10.875 18.75C15.2242 18.75 18.75 15.2242 18.75 10.875C18.75 6.52576 15.2242 3 10.875 3C6.52576 3 3 6.52576 3 10.875C3 15.2242 6.52576 18.75 10.875 18.75Z"
+                stroke="currentColor"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"></path>
+              <path
+                d="M16.4434 16.4438L20.9997 21.0002"
+                stroke="currentColor"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"></path>
+            </svg>
+          </a><button id="toggle-menu" class="nav-button">Menu</button><button
+            class="switch-theme-button nav-button"
+            ><img
+              class="icon-night-mode"
+              width="22"
+              height="22"
+              src="img/icons/icon-night-mode.svg"
+              alt="Switch to night mode"
+            /><img
+              class="icon-day-mode"
+              width="22"
+              height="22"
+              src="img/icons/icon-day-mode.svg"
+              alt="Day mode"
+            /></button
+          >
+        </nav>
+      </div>
+    </header>
+    <section class="intro">
+      <h1 class="intro-title">
+        Learn <span class="frame frame-dart">Dart,</span>
+        <span class="frame frame-flutter">Flutter</span> &amp; <span
+          class="frame frame-firebase">Firebase</span
+        >
+      </h1>
+      <p class="intro-subtitle">
+        Want to become a Flutter Pro and create production-ready apps?<br /><a
+          href="search/index.html">Search the site</a
+        > or browse my <a href="tutorials/index.html">tutorials</a> to fast-track
+        your learning, <b>all for free!</b>
+        <div class="newsletter-container">
+          <h3>The best Flutter tutorials. Right in your inbox.</h3>
+          <p>
+            Join 20K+ Flutter developers who get in-depth articles (on Fridays)
+            and hand-picked Flutter resources (every month):
+          </p>
+          <form
+            id="form-newNewsletterHomePage"
+            action="https://app.convertkit.com/forms/3584409/subscriptions"
+            method="post"
+            novalidate="true"
+            data-sv-form="3584409"
+            data-uid="64c4f3ed27"
+          >
+            <input
+              name="email_address"
+              type="email"
+              required="true"
+              placeholder="Your Email Address"
+              aria-label="Your Email Address"
+            /><button type="submit">Subscribe</button>
+          </form>
+
+          <figure>
+            <blockquote>
+              <p>No spam. Ever. Unsubscribe at any time.</p>
+            </blockquote>
+          </figure>
+        </div>
+      </p>
+    </section>
+    <hr class="vertical higher" />
+    <section class="cards">
+      <header>
+        <h2>Featured Tutorials</h2><a class="more" href="tutorials/index.html"
+          ><span>Explore More Tutorials</span><svg
+            width="25"
+            height="25"
+            viewBox="0 0 25 25"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M5.5 12.9453H19.5"
+              stroke="currentColor"
+              stroke-width="1.5"
+              stroke-linecap="round"
+              stroke-linejoin="round"></path>
+            <path
+              d="M15.5 16.9453L19.5 12.9453"
+              stroke="currentColor"
+              stroke-width="1.5"
+              stroke-linecap="round"
+              stroke-linejoin="round"></path>
+            <path
+              d="M15.5 8.94531L19.5 12.9453"
+              stroke="currentColor"
+              stroke-width="1.5"
+              stroke-linecap="round"
+              stroke-linejoin="round"></path>
+          </svg></a
+        >
+      </header>
+      <div class="cards-list">
+        <a
+          class="card"
+          href="articles/build-deploy-dart-shelf-app-globe/index.html"
+        >
+          <article>
+            <figure>
+              <picture>
+                <source
+                  srcset="/articles/build-deploy-dart-shelf-app-globe/images/cover.webp"
+                  type="image/webp"
+                /><img
+                  src="articles/build-deploy-dart-shelf-app-globe/images/cover.png"
+                  alt="How to Build and Deploy a Dart Shelf App on Globe.dev"
+                  loading="lazy"
+                /></picture
+              >
+            </figure>
+            <div class="card-content">
+              <h3>How to Build and Deploy a Dart Shelf App on Globe.dev</h3>
+              <div class="card-content-info">
+                <time>Mar 22, 2024</time>
+                <hr /><span>23 min read</span>
+              </div>
+              <div class="tags">
+                <div class="tag tag-2">#dart</div>
+                <div class="tag tag-1">#flutter</div>
+                <div class="tag tag-3">#shelf</div>
+                <div class="tag tag-1">#security</div>
+                <div class="tag tag-5">#backend</div>
+              </div>
+              <p>
+                Learn how to build and deploy a Dart Shelf App that taps into
+                the OpenAI API without exposing the API key in your Flutter
+                client.
+              </p>
+            </div>
+          </article>
+        </a>
+        <a class="card" href="articles/flutter-deep-links/index.html">
+          <article>
+            <figure>
+              <picture>
+                <source
+                  srcset="/articles/flutter-deep-links/images/cover.webp"
+                  type="image/webp"
+                /><img
+                  src="articles/flutter-deep-links/images/cover.png"
+                  alt="Flutter Deep Linking: The Ultimate Guide"
+                  loading="lazy"
+                /></picture
+              >
+            </figure>
+            <div class="card-content">
+              <h3>Flutter Deep Linking: The Ultimate Guide</h3>
+              <div class="card-content-info">
+                <time>Dec 8, 2023</time>
+                <hr /><span>23 min read</span>
+              </div>
+              <div class="tags">
+                <div class="tag tag-2">#dart</div>
+                <div class="tag tag-1">#flutter</div>
+                <div class="tag tag-5">#navigation</div>
+                <div class="tag tag-6">#gorouter</div>
+              </div>
+              <p>
+                A step-by-step tutorial showing how to implement deep links in
+                Flutter using GoRouter, including the native Android and iOS
+                platform setup.
+              </p>
+            </div>
+          </article>
+        </a>
+        <a
+          class="card"
+          href="articles/flutter-app-architecture-riverpod-introduction/index.html"
+        >
+          <article>
+            <figure>
+              <picture>
+                <source
+                  srcset="/articles/flutter-app-architecture-riverpod-introduction/images/cover.webp"
+                  type="image/webp"
+                /><img
+                  src="articles/flutter-app-architecture-riverpod-introduction/images/cover.png"
+                  alt="Flutter App Architecture with Riverpod: An Introduction"
+                  loading="lazy"
+                /></picture
+              >
+            </figure>
+            <div class="card-content">
+              <h3>Flutter App Architecture with Riverpod: An Introduction</h3>
+              <div class="card-content-info">
+                <time>Sep 1, 2023</time>
+                <hr /><span>8 min read</span>
+              </div>
+              <div class="tags">
+                <div class="tag tag-2">#dart</div>
+                <div class="tag tag-1">#flutter</div>
+                <div class="tag tag-6">#riverpod</div>
+                <div class="tag tag-6">#app-architecture</div>
+                <div class="tag tag-1">#design-patterns</div>
+              </div>
+              <p>
+                Introducing a new Riverpod App Architecture that can be used to
+                build scalable and maintainable apps with a clear structure.
+              </p>
+            </div>
+          </article>
+        </a>
+        <a class="card" href="articles/flutter-project-structure/index.html">
+          <article>
+            <figure>
+              <picture>
+                <source
+                  srcset="/articles/flutter-project-structure/images/cover.webp"
+                  type="image/webp"
+                /><img
+                  src="articles/flutter-project-structure/images/cover.png"
+                  alt="Flutter Project Structure: Feature-first or Layer-first?"
+                  loading="lazy"
+                /></picture
+              >
+            </figure>
+            <div class="card-content">
+              <h3>Flutter Project Structure: Feature-first or Layer-first?</h3>
+              <div class="card-content-info">
+                <time>Mar 23, 2022</time>
+                <hr /><span>9 min read</span>
+              </div>
+              <div class="tags">
+                <div class="tag tag-2">#dart</div>
+                <div class="tag tag-1">#flutter</div>
+                <div class="tag tag-6">#app-architecture</div>
+              </div>
+              <p>
+                An overview of the feature-first and layer-first approaches when
+                choosing a project structure for medium/large Flutter apps,
+                along with their tradeoffs and common pitfalls.
+              </p>
+            </div>
+          </article>
+        </a>
+      </div><a class="more" href="tutorials/index.html"
+        ><span>Explore More Tutorials</span><svg
+          width="25"
+          height="25"
+          viewBox="0 0 25 25"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M5.5 12.9453H19.5"
+            stroke="currentColor"
+            stroke-width="1.5"
+            stroke-linecap="round"
+            stroke-linejoin="round"></path>
+          <path
+            d="M15.5 16.9453L19.5 12.9453"
+            stroke="currentColor"
+            stroke-width="1.5"
+            stroke-linecap="round"
+            stroke-linejoin="round"></path>
+          <path
+            d="M15.5 8.94531L19.5 12.9453"
+            stroke="currentColor"
+            stroke-width="1.5"
+            stroke-linecap="round"
+            stroke-linejoin="round"></path>
+        </svg></a
+      >
+    </section>
+    <hr class="vertical" />
+    <section class="cards">
+      <header>
+        <h2>Dart and Flutter courses</h2>
+      </header>
+      <div class="cards-list col-2">
+        <a
+          class="card plausible-event-name=Click+Card+FF1"
+          href="courses/flutter-foundations/index.html"
+        >
+          <article>
+            <figure>
+              <picture>
+                <source
+                  srcset="/img/banners/flutter-foundations-small.avif"
+                  type="image/avif"
+                />
+                <source
+                  srcset="/img/banners/flutter-foundations-small.webp"
+                  type="image/webp"
+                /><img
+                  alt="Flutter Foundations Course"
+                  loading="lazy"
+                  src="img/banners/flutter-foundations-small.png"
+                /></picture
+              >
+            </figure>
+            <div class="card-content">
+              <h3>Flutter Foundations Course</h3>
+              <div class="card-content-info">
+                <span>INTERMEDIATE TO ADVANCED</span>
+              </div>
+              <p>
+                Learn about State Management, App Architecture, Navigation,
+                Testing, and much more by building a Flutter eCommerce app on
+                iOS, Android, and web.
+              </p>
+            </div>
+          </article>
+        </a>
+        <a
+          class="card plausible-event-name=Click+Card+FF2"
+          href="courses/flutter-firebase-masterclass/index.html"
+        >
+          <article>
+            <figure>
+              <picture>
+                <source
+                  srcset="/img/banners/flutter-firebase-course-banner-small.avif"
+                  type="image/avif"
+                />
+                <source
+                  srcset="/img/banners/flutter-firebase-course-banner-small.webp"
+                  type="image/webp"
+                /><img
+                  alt="Flutter & Firebase Masterclass"
+                  loading="lazy"
+                  src="img/banners/flutter-firebase-course-banner-small.png"
+                /></picture
+              >
+            </figure>
+            <div class="card-content">
+              <h3>Flutter &amp; Firebase Masterclass</h3>
+              <div class="card-content-info">
+                <span>INTERMEDIATE TO ADVANCED</span>
+              </div>
+              <p>
+                Learn about Firebase Auth, Cloud Firestore, Cloud Functions,
+                Stripe payments, and much more by building a full-stack
+                eCommerce app with Flutter &amp; Firebase.
+              </p>
+            </div>
+          </article>
+        </a>
+        <a
+          class="card plausible-event-name=Click+Card+Dart"
+          href="courses/complete-dart-guide/index.html"
+        >
+          <article>
+            <figure>
+              <picture>
+                <source
+                  srcset="/img/banners/dart-course-banner-small.avif"
+                  type="image/avif"
+                />
+                <source
+                  srcset="/img/banners/dart-course-banner-small.webp"
+                  type="image/webp"
+                /><img
+                  alt="The Complete Dart Developer Guide"
+                  loading="lazy"
+                  src="img/banners/dart-course-banner-small.png"
+                /></picture
+              >
+            </figure>
+            <div class="card-content">
+              <h3>The Complete Dart Developer Guide</h3>
+              <div class="card-content-info">
+                <span>BEGINNER</span>
+                <hr /><span>10 HOURS</span>
+              </div>
+              <p>
+                Learn Dart Programming in depth. Includes: basic to advanced
+                topics, exercises, and projects. Fully updated to Dart 2.15.
+              </p>
+            </div>
+          </article>
+        </a>
+        <a
+          class="card plausible-event-name=Click+Card+FA"
+          href="courses/flutter-animations-masterclass/index.html"
+        >
+          <article>
+            <figure>
+              <picture>
+                <source
+                  srcset="/img/banners/flutter-animations-course-banner-small.avif"
+                  type="image/avif"
+                />
+                <source
+                  srcset="/img/banners/flutter-animations-course-banner-small.webp"
+                  type="image/webp"
+                /><img
+                  alt="Flutter Animations Masterclass"
+                  loading="lazy"
+                  src="img/banners/flutter-animations-course-banner-small.png"
+                /></picture
+              >
+            </figure>
+            <div class="card-content">
+              <h3>Flutter Animations Masterclass</h3>
+              <div class="card-content-info">
+                <span>INTERMEDIATE</span>
+                <hr /><span>7 HOURS</span>
+              </div>
+              <p>
+                Master Flutter animations and build a completely custom habit
+                tracking application.
+              </p>
+            </div>
+          </article>
+        </a>
+      </div>
+    </section>
+    <hr class="vertical" />
+    <section class="cards">
+      <header>
+        <h2>All the courses, one bundle</h2>
+      </header>
+      <article class="card featured-course-banner">
+        <figure>
+          <picture>
+            <source
+              srcset="/img/banners/all-courses-bundle.avif"
+              type="image/avif"
+            />
+            <source
+              srcset="/img/banners/all-courses-bundle.webp"
+              type="image/webp"
+            /><img
+              alt="4x Flutter Course Bundle"
+              loading="lazy"
+              src="img/banners/all-courses-bundle.png"
+            /></picture
+          >
+        </figure>
+        <div class="card-content">
+          <h3>4x Flutter Course Bundle</h3>
+          <div class="card-content-info"><span>BEGINNER TO ADVANCED</span></div>
+          <p>
+            Get all my Flutter courses in one bundle, and level up your Flutter
+            skills with over 40 hours of high-quality content!
+          </p><a
+            class="cta-button plausible-event-name=Click+Card+Bundle"
+            href="courses/all-courses-bundle/index.html">View Offer</a
+          >
+        </div>
+      </article>
+    </section>
+    <hr class="vertical" />
+    <section class="testimonials">
+      <header>
+        <h3>Over 3,500 enrolled students</h3>
+      </header>
+      <div class="testimonial-list">
+        <article class="testimonial">
+          <p>
+            I can honestly say that Andrea's knowledge and guidance is top
+            notch! He explains the principles well which helps you understand
+            the concepts and structures within the Dart language.
+          </p>
+          <p>
+            <span class="highlight">This course is a great asset</span> to anyone
+            looking to improve their coding skills. Having Andrea by your side, you
+            should feel privileged to have a mentor / coach of his caliber, who shares
+            his knowledge in such an "easy to understand" manner. Thanks!
+          </p>
+          <footer>
+            <figure>
+              <figcaption>
+                <p class="author-name">Andri De Jager</p>
+                <p class="course-title">The Complete Dart Developer Guide</p>
+                <div class="rating" role="banner"></div>
+              </figcaption>
+            </figure>
+          </footer>
+        </article>
+        <article class="testimonial">
+          <p>
+            Clear explanations, a useful practical application that demonstrates
+            all the core things essential to building an app ready for release
+            into the wild.
+          </p>
+          <p>
+            Every step taken is <span class="highlight"
+              >clearly and thoroughly explained</span
+            >, plus downloadable code for every section of this course. A
+            fantastic current course and is proving invaluable for strategies
+            for building ideas for my own app.
+          </p>
+          <p>
+            Cannot praise this course and Andrea’s presentation highly enough.
+          </p>
+          <footer>
+            <figure>
+              <figcaption>
+                <p class="author-name">Cheryl Kirsten</p>
+                <p class="course-title">
+                  Flutter &amp; Firebase Course: Build a Complete App for iOS
+                  &amp; Android
+                </p>
+                <div class="rating" role="banner"></div>
+              </figcaption>
+            </figure>
+          </footer>
+        </article>
+        <article class="testimonial">
+          <p>
+            <span class="highlight">Andrea is a great instructor!</span> He packs
+            a ton of great information into each lesson in a concise way.
+          </p>
+          <footer>
+            <figure>
+              <picture>
+                <source
+                  srcset="/img/avatars/parker-stevens.webp"
+                  type="image/webp"
+                /><img
+                  src="img/avatars/parker-stevens.jpg"
+                  alt="Parker Stevens"
+                /></picture
+              >
+              <figcaption>
+                <p class="author-name">Parker Stevens</p>
+                <p class="course-title">The Complete Dart Developer Guide</p>
+                <div class="rating" role="banner"></div>
+              </figcaption>
+            </figure>
+          </footer>
+        </article>
+        <article class="testimonial">
+          <p>
+            Andrea is an <span class="highlight"
+              >excellent instructor and developer</span
+            >. Very thankful he takes the time to create these courses and
+            maintain his YouTube tutorials.
+          </p>
+          <p>
+            The way Andrea codes reveals a lot of best practices, <span
+              class="highlight">good app architecture</span
+            > and interesting techniques; his source code is very clean and logical.
+          </p>
+          <p>
+            In my opinion, this gives him a unique advantage versus other online
+            instructors who write code to illustrate a point but often shortcuts
+            are taken or it is not production quality.
+          </p>
+          <p>
+            There are more intermediate level tips I don't see other devs
+            covering. Thanks so much Andrea!!
+          </p>
+          <footer>
+            <figure>
+              <picture>
+                <source
+                  srcset="/img/avatars/niven-shah.webp"
+                  type="image/webp"
+                /><img
+                  src="img/avatars/niven-shah.jpg"
+                  alt="Niven Shah"
+                /></picture
+              >
+              <figcaption>
+                <p class="author-name">Niven Shah</p>
+                <p class="course-title">
+                  Flutter &amp; Firebase Course: Build a Complete App for iOS
+                  &amp; Android
+                </p>
+                <div class="rating" role="banner"></div>
+              </figcaption>
+            </figure>
+          </footer>
+        </article>
+        <article class="testimonial">
+          <p>
+            Up-to-date content, didactic instructor, good support community on
+            Slack, additional resources, tutorials and optional videos with the
+            latest advances in Flutter.
+          </p>
+          <p>
+            <span class="highlight">Concise and direct to the point</span>, with
+            a huge number of diagrams. A colossal amount of work to simplify our
+            learning.
+          </p>
+          <footer>
+            <figure>
+              <figcaption>
+                <p class="author-name">Fabian Sosa Escalada</p>
+                <p class="course-title">
+                  Flutter &amp; Firebase Course: Build a Complete App for iOS
+                  &amp; Android
+                </p>
+                <div class="rating" role="banner"></div>
+              </figcaption>
+            </figure>
+          </footer>
+        </article>
+        <article class="testimonial">
+          <p>
+            This is <span class="highlight">by far the best Flutter course</span
+            > if you want to learn coding best practises while learning flutter,
+            which I think everyone should.
+          </p>
+          <p>
+            I've taken two other top rated flutter courses in Udemy and speaking
+            by experience.
+          </p>
+          <p>
+            Another impressive thing about this course is that most of the
+            videos are around 5 minutes even to cover complex topics. I am
+            pretty sure Andrea has put lot of work to make them as such.
+          </p>
+          <footer>
+            <figure>
+              <picture>
+                <source
+                  srcset="/img/avatars/nipuna-cooray.webp"
+                  type="image/webp"
+                /><img
+                  src="img/avatars/nipuna-cooray.jpg"
+                  alt="Nipuna Cooray"
+                /></picture
+              >
+              <figcaption>
+                <p class="author-name">Nipuna Cooray</p>
+                <p class="course-title">
+                  Flutter &amp; Firebase Course: Build a Complete App for iOS
+                  &amp; Android
+                </p>
+                <div class="rating" role="banner"></div>
+              </figcaption>
+            </figure>
+          </footer>
+        </article>
+        <article class="testimonial">
+          <p>
+            <span class="highlight">Andrea’s Flutter content is amazing</span> -
+            it’s one of the few resources I consistently reference for advanced real-world
+            solutions.
+          </p>
+          <p>
+            He clearly puts a huge amount of care and thought into every
+            tutorial. Highly recommended!
+          </p>
+          <footer>
+            <figure>
+              <picture>
+                <source
+                  srcset="/img/avatars/jeff-delaney.webp"
+                  type="image/webp"
+                /><img
+                  src="img/avatars/jeff-delaney.jpg"
+                  alt="Jeff Delaney (Fireship)"
+                /></picture
+              >
+              <figcaption>
+                <p class="author-name">Jeff Delaney (Fireship)</p>
+                <div class="rating" role="banner"></div>
+              </figcaption>
+            </figure>
+          </footer>
+        </article>
+        <article class="testimonial">
+          <p>
+            I would like to thank you very much Andrea for all your effort in
+            helping me and others to learn about Dart, Flutter, and Firebase.
+          </p>
+          <p>
+            It literally <span class="highlight">changed my life</span> because I
+            started a new job as Flutter Developer and you gave me all the fundamentals
+            to make this journey possible.
+          </p>
+          <footer>
+            <figure>
+              <figcaption>
+                <p class="author-name">Alexander Michels</p>
+                <p class="course-title">The Complete Dart Developer Guide</p>
+                <div class="rating" role="banner"></div>
+              </figcaption>
+            </figure>
+          </footer>
+        </article>
+      </div>
+    </section>
+    <div class="spacer-section"></div>
+    <hr class="vertical" />
+    <section class="about-me">
+      <a id="about-me" href="#about-me"></a>
+      <h2>About Me</h2>
+      <p class="welcome-text">Hello, I’m Andrea</p>
+      <header>
+        <figure>
+          <picture>
+            <source
+              srcset="/img/avatars/andrea-avatar.webp"
+              type="image/webp"
+            /><img src="img/avatars/andrea-avatar.png" alt="Andrea" /></picture
+          >
+          <figcaption>
+            I'm a Google Developer Expert for Dart &amp; Flutter.
+          </figcaption>
+        </figure>
+        <p>
+          I created this website to help you become a Flutter Pro and make
+          high-quality apps.
+        </p>
+      </header>
+      <div class="content">
+        <div>
+          <h3>Why Flutter?</h3>
+          <p>
+            I think Flutter is the future of mobile app development. You can use
+            it to build native apps in record time, and run your code on
+            multiple platforms.
+          </p>
+        </div>
+        <div>
+          <h3>What's my teaching style?</h3>
+          <p>
+            My tutorials are <b>clear</b>, <b>concise</b>, and based on <b
+              >real-world examples</b
+            >. Just like my code. <a href="videos/index.html">Watch my videos</a
+            > for a first-hand experience.
+          </p>
+          <p>
+            They include a lot of practical advice and tips that will make you
+            more productive, and a better software developer.
+          </p>
+          <p>
+            Life is short. <b>Your time matters</b>. I want to help you make the
+            most of it, and enjoy your journey.
+          </p>
+          <p>
+            Want to get in touch? See my <a href="contact/index.html"
+              >contact page</a
+            >.
+          </p>
+          <p><b>Happy coding!</b></p>
+        </div>
+      </div>
+    </section>
+    <section class="signup-footer">
+      <h2>Grow as a Flutter Developer</h2>
+      <p>
+        Join 20K+ Flutter developers who get in-depth articles (on Fridays) and
+        hand-picked Flutter resources (every month):
+      </p>
+      <div class="spacer-20px"></div>
+      <form
+        id="form-newNewsletterFooter"
+        action="https://app.convertkit.com/forms/3584409/subscriptions"
+        method="post"
+        novalidate="true"
+        data-sv-form="3584409"
+        data-uid="64c4f3ed27"
+      >
+        <input
+          name="email_address"
+          type="email"
+          required="true"
+          placeholder="Your Email Address"
+          aria-label="Your Email Address"
+        /><button type="submit">Subscribe</button>
+      </form>
+
+      <p>No spam, ever. Unsubscribe at any time.</p>
+    </section>
+    <footer id="footer">
+      <a class="logo" href="index.html"
+        ><img src="img/icons/logo.svg" alt="Code with Andrea" /><span
+          >CODE WITH ANDREA</span
+        ></a
+      >
+      <p>Copyright © 2023 Coding With Flutter Limited</p>
+      <nav>
+        <a href="contact/index.html">Contact</a><a
+          href="../twitter.com/biz84.html"
+          rel="noopener noreferrer"
+          target="_blank">Twitter</a
+        ><a
+          href="../discord.com/invite/ycSWF9UtkW.html"
+          rel="noopener noreferrer"
+          target="_blank">Discord</a
+        ><a
+          href="../github.com/bizz84/index.html"
+          rel="noopener"
+          target="_blank">GitHub</a
+        ><a href="rss.xml">RSS</a><a href="meta/index.html">Meta</a><a
+          href="privacy-policy/index.html">Privacy Policy</a
+        ><a href="terms-of-use/index.html">Terms of Use</a>
+      </nav>
+    </footer>
+    <script src="js/global.min.js"></script>
+    <script src="js/menu-toggle.min.js"></script>
+    <script src="js/countdown.min.js"></script>
+  </body>
+  <!-- Mirrored from codewithandrea.com/ by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 24 Mar 2024 07:14:44 GMT -->
+</html>
