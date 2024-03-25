@@ -8,6 +8,7 @@ export default defineConfig({
     output: 'server',
     adapter: netlify({
         imageCDN: false,
+        cacheOnDemandPages: true,
     }),
 
     integrations: [mdx()]
