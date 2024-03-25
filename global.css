@@ -594,8 +594,8 @@ ul {
 }
 
 .intro {
-    padding: 120px 0 130px;
-    background: url(/img/icons/icon-firebase.svg) no-repeat 9.2% 235px, url(/img/icons/icon-dart.svg) no-repeat 88.2% 365px, url(/img/icons/icon-flutter.svg) no-repeat 79.16% bottom;
+    padding: 120px 0 100px;
+    background: url(/img/icons/icon-firebase.svg) no-repeat 9.2% 235px, url(/img/icons/icon-dart.svg) no-repeat 88.2% 365px, ;
     text-align: center;
     color: var(--intro-content-color);
     font-size: var(--fs-body);
