@@ -10,16 +10,28 @@ import navData from "../data/navData";
 
 <header id="header">
   <div class="header-container">
-    <a class="logo" href="../index.html"
-      ><img src="images/logo.png" alt="Code With Imem" /><span
+    <a class="logo" href="/"
+      ><img src="../images/logo.png" alt="Code With Imem" /><span
         >CODE WITH IMEM</span
       ></a
     >
 
     <nav id="main-nav">
       <ul>
-        <li><a href="../tutorial.html">Tutorials</a></li>
-        <li><a href="../newsletter.html">Newsletter</a></li>
+        {
+          navData.map((item) => (
+            <li>
+              <Link
+                text={item.name}
+                href={item.path}
+                style="primary"
+                isFilled={false}
+                data-navLink
+              />
+            </li>
+          ))
+        }
+
         <li class="switch-theme-list-item">
           <button class="switch-theme-button nav-button"
             ><img
@@ -28,21 +40,10 @@ import navData from "../data/navData";
               height="22"
               src="img/icons/icon-night-mode.svg"
               alt="Switch to night mode"
-            /><img
-              class="icon-day-mode"
-              width="22"
-              height="22"
-              src="img/icons/icon-day-mode.svg"
-              alt="Day mode"
-            /><span id="switch-theme-text">Switch to dark mode</span></button
-          >
+            />
+          </button>
         </li>
-      </ul>
-      <a
-        class="search-link nav-button"
-        href="search/index.html"
-        aria-label="Search"
-      >
+
         <svg
           width="24"
           height="24"
@@ -63,7 +64,7 @@ import navData from "../data/navData";
             stroke-linecap="round"
             stroke-linejoin="round"></path>
         </svg>
-      </a><button id="toggle-menu" class="nav-button">Menu</button><button
+      </ul><button id="toggle-menu" class="nav-button">Menu</button><button
         class="switch-theme-button nav-button"></button>
     </nav>
   </div>

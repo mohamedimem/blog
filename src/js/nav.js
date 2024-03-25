@@ -15,7 +15,7 @@ function trackEmailSignup(e, t, a, i) {
         r = "error-msg",
         l = !n.hasAttribute("novalidate"),
         o = n.querySelector('input[type="email"]'),
-        d = () => n.getElementsByClassName(r)[0] ? .remove();
+        d = () => n.getElementsByClassName(r)[0].remove();
     o.addEventListener("focus", (() => { n.classList.remove(s), d() })), n.addEventListener("submit", (e => {
         e.preventDefault();
         if (!n.checkValidity()) {
