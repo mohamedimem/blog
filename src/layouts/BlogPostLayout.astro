@@ -41,6 +41,40 @@ const relatedPosts = formattedPosts
           </div>
         </section>
       </article>
+      <aside>
+        <div class="widget widget-newsletter">
+          <h3>Never miss my articles &amp; newsletters</h3>
+          <p>
+            Join 20K+ Flutter developers who get in-depth articles (on Fridays)
+            and hand-picked Flutter resources (every month):
+          </p>
+          <form
+            id="form-newNewsletterHomePage"
+            action="https://app.convertkit.com/forms/6371905/subscriptions"
+            method="post"
+            novalidate="true"
+            data-sv-form="3584409"
+            data-uid="64c4f3ed27"
+          >
+            <input
+              name="email_address"
+              type="email"
+              required="true"
+              placeholder="Your Email Address"
+              aria-label="Your Email Address"
+            />
+            <button type="submit">Subscribe</button>
+          </form>
+          <script>
+            trackEmailSignup(
+              "form-newNewsletterSidebar",
+              "sidebar",
+              "articles/adding-animated-overlays-to-your-app",
+              "Signup New Newsletter",
+            );
+          </script>
+        </div>
+      </aside>
     </div>
   </main>
 </MainLayout>
