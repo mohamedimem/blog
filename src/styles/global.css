@@ -3074,7 +3074,7 @@ code {
 .content p code {
     background-color: var(--inlineCodeBackgroundColor);
     display: inline-block;
-    padding: 0 5px;
+    padding: 8 8px;
     border: var(--codeBorder);
     border-radius: 8px;
     font-size: var(--fs-body);
@@ -3091,11 +3091,8 @@ code {
 
 pre {
     margin-top: 20px;
-    margin-bottom: 40px
-}
-
-pre code {
-    display: flex;
+    margin-bottom: 40px;
+    border-radius: 8px;
     background-color: var(--codeBackgroundColor);
     padding: 15px 20px;
     border-radius: 8px;
@@ -3103,43 +3100,58 @@ pre code {
     font-size: var(--fs-body);
     line-height: var(--lh-body);
     overflow-x: auto;
-    white-space: pre;
+    padding: 1.2em 1.4em;
+    border-radius: 8px;
     -webkit-overflow-scrolling: touch
 }
 
-pre code .s-keyword {
+pre code {
+    /* display: flex; */
+    background-color: var(--codeBackgroundColor);
+    padding: 15px 20px;
+    border-radius: 8px;
+    color: var(--codeTextColor);
+    font-size: var(--fs-body);
+    line-height: var(--lh-body);
+    overflow-x: auto;
+    padding: 1.2em 1.4em;
+    border-radius: 8px;
+    -webkit-overflow-scrolling: touch
+}
+
+pre .s-keyword {
     color: #e83b8e
 }
 
-pre code .s-type {
+pre .s-type {
     color: #8281ca
 }
 
-pre code .s-call {
+pr .s-call {
     color: #348fe5
 }
 
-pre code .s-property {
+pr .s-property {
     color: #21ab9d
 }
 
-pre code .s-number {
+pre .s-number {
     color: #db6f57
 }
 
-pre code .s-string {
+pr .s-string {
     color: #fa641e
 }
 
-pre code .s-comment {
+pre .s-comment {
     color: #6b8a94
 }
 
-pre code .s-dotAccess {
+pr .s-dotAccess {
     color: #92b300
 }
 
-pre code .s-preprocessing {
+pre .s-preprocessing {
     color: #b68a00
 }
 
