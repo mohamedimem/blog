@@ -11,7 +11,7 @@ import { formatBlogPosts } from "../js/utils";
 const { frontmatter } = Astro.props;
 const { title, description, date, category, author, image } = frontmatter;
 
-const allPosts = await Astro.glob("../pages/blog/*.md");
+const allPosts = await Astro.glob("../pages/blog/*mdx");
 const formattedPosts = formatBlogPosts(allPosts, {
   sortByDate: false,
 });
@@ -31,13 +31,19 @@ const relatedPosts = formattedPosts
   {frontmatter}
   robots={frontmatter.robots}
 >
-  <article>
-    <section class="article-container">
-      <div class="post-content">
+  <main class="article-container">
+    <div>
+      <article>
         <div class="content">
-          <slot />
+          <section class="article">
+            <div class="post-content">
+              <div class="content">
+                <slot />
+              </div>
+            </div>
+          </section>
         </div>
-      </div>
-    </section>
-  </article>
+      </article>
+    </div>
+  </main>
 </MainLayout>

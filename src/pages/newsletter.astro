@@ -4,7 +4,7 @@ import PostCard from "../components/PostCard.astro";
 import { formatBlogPosts } from "../js/utils";
 import MainLayout from "../layouts/MainLayout.astro";
 
-const allPosts = await Astro.glob("../pages/blog/*.md");
+const allPosts = await Astro.glob("../pages/blog/*mdx");
 const formattedPosts = formatBlogPosts(allPosts);
 const allCategories = formattedPosts
   .map((cat) => cat.frontmatter.category.toLowerCase())

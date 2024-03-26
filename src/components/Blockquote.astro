@@ -1,0 +1,25 @@
+---
+const props = Astro.props;
+---
+
+<blockquote {...props} class="styled-blockquote">
+  <slot />
+
+  <!-- Be sure to add a `<slot/>` for child content! -->
+</blockquote>
+
+<style>
+  /* Define styles for the blockquote */
+  .styled-blockquote {
+    /* position: relative; */
+    background-color: var(
+      --blockquoteBackgroundColor,
+      #f0f0f0
+    ); /* Default to light grey if --blockquoteBackgroundColor is not defined */
+    /* padding: 8px 16px; */
+    border-radius: 8px;
+    border-left: 0px solid var(--primary5, #007bff); /* Default to blue if --primary5 is not defined */
+    /* overflow-x: auto; */
+    margin: 0;
+  }
+</style>

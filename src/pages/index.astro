@@ -3,7 +3,7 @@ import PostCard from "../components/PostCard.astro";
 import { formatBlogPosts } from "../js/utils";
 import MainLayout from "../layouts/MainLayout.astro";
 
-const allPosts = await Astro.glob("../pages/blog/*.md");
+const allPosts = await Astro.glob("../pages/blog/*mdx");
 const formattedPosts = formatBlogPosts(allPosts);
 const allCategories = formattedPosts
   .map((cat) => cat.frontmatter.category.toLowerCase())
@@ -21,14 +21,6 @@ const processedCats = allCategories.reduce((acc, category) => {
 ---
 
 <MainLayout title="My Blog">
-  <script>
-    trackEmailSignup(
-      "form-newNewsletterHomePage",
-      "home",
-      "tutorials",
-      "Signup New Newsletter",
-    );
-  </script>
   <section class="intro">
     <h1 class="intro-title">
       Read <span class="frame frame-dart">Latest,</span>
@@ -37,8 +29,8 @@ const processedCats = allCategories.reduce((acc, category) => {
       >
     </h1>
     <p class="intro-subtitle">
-      Want to become a Better Developer and build REAL WORLD apps?<br /><></>
-      browse my <a href="/blog/blog.html">Articles</a> to Speed up your learning
+      Want to become a Better Developer and create Real World apps?<br /><></>
+      browse my <a href="tutorials/index.html">Articles</a> to Speed up your learning
       Curve,
       <b>all for free!</b>
       <div class="newsletter-container">
